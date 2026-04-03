@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Mail, MapPin, Phone, Clock } from 'lucide-react';
+import { Instagram, MessageCircle, MapPin, Phone, Clock } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -12,9 +12,9 @@ const Footer = () => {
               Elevating your style and confidence through expert beauty and hair care services.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-primary transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="hover:text-primary transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="hover:text-primary transition-colors"><Mail size={20} /></a>
+              <a href="https://www.instagram.com/hallowed_salon_academy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="hover:text-primary transition-colors"><Instagram size={20} /></a>
+            
+              <a href="https://wa.me/919024263865" className="hover:text-primary transition-colors"><MessageCircle size={20} /></a>
             </div>
           </div>
 
