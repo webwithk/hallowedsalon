@@ -8,12 +8,12 @@ import TestimonialCard from './components/TestimonialCard';
 import PriceCard from './components/PriceCard';
 import Accordion from './components/Accordion';
 import BookingForm from './components/BookingForm';
-import haircutStyling from "./src/assets/service-hair.jpg";
-import hairColoring from "./src/assets/service-hair.jpg";
-import facialSkincare from "./src/assets/service-facial.jpg";
-import manicurePedicure from "./src/assets/service-nails.jpg";
-import bridalMakeup from "./src/assets/service-bridal.jpg";
-import hairSpa from "./src/assets/hero.jpg";
+import haircutStyling from "./assets/service-hair.jpg";
+import hairColoring from "./assets/service-hair.jpg";
+import facialSkincare from "./assets/service-facial.jpg";
+import manicurePedicure from "./assets/service-nails.jpg";
+import bridalMakeup from "./assets/service-bridal.jpg";
+import hairSpa from "./assets/hero.jpg";
 
 const App = () => {
   const [galleryFilter, setGalleryFilter] = useState('All');
