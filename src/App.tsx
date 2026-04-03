@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Scissors, Sparkles, Heart, ShieldCheck, ThumbsUp, MapPin, Phone, Clock, Mail } from 'lucide-react';
+import { Scissors, Sparkles, Heart, ShieldCheck, ThumbsUp, MapPin, Phone, Clock} from 'lucide-react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ServiceCard from './components/ServiceCard';
@@ -79,7 +79,7 @@ const App = () => {
         <div 
           className="absolute inset-0 z-0 parallax"
           style={{ 
-            backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/src/hero.jpg')" 
+            backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./assets/hero.jpg')" 
           }}
         />
         <div className="relative z-10 text-center px-4">
@@ -143,12 +143,12 @@ const App = () => {
               className="relative"
             >
               <img 
-                src="/images/team-1.jpg" 
+                src="./assets/team-1.jpg" 
                 alt="Salon Interior" 
                 className="rounded-2xl shadow-2xl w-full h-[600px] object-cover"
               />
               <div className="absolute -bottom-10 -right-10 hidden md:block w-64 h-64 border-8 border-secondary rounded-2xl overflow-hidden shadow-xl">
-                <img src="/images/team-2.jpg" alt="Stylist" className="w-full h-full object-cover" />
+                <img src="./assets/team-2.jpg" alt="Stylist" className="w-full h-full object-cover" />
               </div>
             </motion.div>
             
@@ -317,15 +317,7 @@ const App = () => {
                     <p className="font-bold">+91 90242 63865</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
-                    <Mail size={24} />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500">Email Us</p>
-                    <p className="font-bold">hello@hallowed.com</p>
-                  </div>
-                </div>
+    
               </div>
             </div>
             
@@ -404,7 +396,7 @@ const App = () => {
                     <h4 className="font-bold text-lg">Location</h4>
                     <p className="text-gray-600">Celebration Mall Road, RK Circle, Punjawati, Pulla Bhuwana, Udaipur, Rajasthan 313001</p>
                     <a 
-                      href="https://maps.google.com" 
+                      href="https://maps.app.goo.gl/cBTDrYbWYgTYamcXA" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-primary font-bold text-sm mt-2 inline-block hover:underline"
