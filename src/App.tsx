@@ -14,6 +14,9 @@ import facialSkincare from "./assets/service-facial.jpg";
 import manicurePedicure from "./assets/service-nails.jpg";
 import bridalMakeup from "./assets/service-bridal.jpg";
 import hairSpa from "./assets/hero.jpg";
+import team1 from "./assets/team-1.jpg";
+import team2 from "./assets/team-2.jpg";
+import backgroundImage from "./assets/hero.jpg";
 
 const App = () => {
   const [galleryFilter, setGalleryFilter] = useState('All');
@@ -76,10 +79,10 @@ const App = () => {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 z-0 parallax"
-          style={{ 
-            backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./assets/hero.jpg')" 
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${backgroundImage})`
           }}
         />
         <div className="relative z-10 text-center px-4">
@@ -142,13 +145,13 @@ const App = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <img 
-                src="./assets/team-1.jpg" 
-                alt="Salon Interior" 
+              <img
+                src={team1}
+                alt="Salon Interior"
                 className="rounded-2xl shadow-2xl w-full h-[600px] object-cover"
               />
               <div className="absolute -bottom-10 -right-10 hidden md:block w-64 h-64 border-8 border-secondary rounded-2xl overflow-hidden shadow-xl">
-                <img src="./assets/team-2.jpg" alt="Stylist" className="w-full h-full object-cover" />
+                <img src={team2} alt="Stylist" className="w-full h-full object-cover" />
               </div>
             </motion.div>
             
