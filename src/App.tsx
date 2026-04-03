@@ -8,6 +8,12 @@ import TestimonialCard from './components/TestimonialCard';
 import PriceCard from './components/PriceCard';
 import Accordion from './components/Accordion';
 import BookingForm from './components/BookingForm';
+import haircutStyling from "./src/assets/service-hair.jpg";
+import hairColoring from "./src/assets/service-hair.jpg";
+import facialSkincare from "./src/assets/service-facial.jpg";
+import manicurePedicure from "./src/assets/service-nails.jpg";
+import bridalMakeup from "./src/assets/service-bridal.jpg";
+import hairSpa from "./src/assets/hero.jpg";
 
 const App = () => {
   const [galleryFilter, setGalleryFilter] = useState('All');
@@ -16,48 +22,48 @@ const App = () => {
     {
       title: 'Haircut & Styling',
       description: 'Trendy cuts and professional styling tailored to your face shape and personality.',
-      image: '/images/service-hair.jpg',
+      image: haircutStyling,
       icon: <Scissors size={24} />
     },
     {
       title: 'Hair Coloring',
       description: 'Expert color treatments, highlights, and balayage using premium, hair-safe products.',
-      image: '/images/service-hair.jpg', // Reusing for consistency or fetch more
+      image: hairColoring, // imported asset
       icon: <Sparkles size={24} />
     },
     {
       title: 'Facial & Skincare',
       description: 'Glow-enhancing treatments that rejuvenate your skin and provide a relaxing experience.',
-      image: '/images/service-facial.jpg',
+      image: facialSkincare,
       icon: <Heart size={24} />
     },
     {
       title: 'Manicure & Pedicure',
       description: 'Relaxing nail care with premium polishes and therapeutic hand/foot massages.',
-      image: '/images/service-nails.jpg',
+      image: manicurePedicure, // imported asset
       icon: <Sparkles size={24} />
     },
     {
       title: 'Bridal Makeup',
       description: 'The perfect look for your big day, designed to make you look stunning in every light.',
-      image: '/images/service-bridal.jpg',
+      image: bridalMakeup, // imported asset
       icon: <Sparkles size={24} />
     },
     {
       title: 'Hair Spa',
       description: 'Deep conditioning and restorative treatments to bring life back to your hair.',
-      image: '/images/hero.jpg',
+      image: hairSpa, // imported asset
       icon: <Scissors size={24} />
     }
   ];
 
   const galleryItems = [
-    { category: 'Hair', image: '/images/service-hair.jpg' },
-    { category: 'Makeup', image: '/images/service-bridal.jpg' },
-    { category: 'Nails', image: '/images/service-nails.jpg' },
-    { category: 'Bridal', image: '/images/service-bridal.jpg' },
-    { category: 'Hair', image: '/images/hero.jpg' },
-    { category: 'Makeup', image: '/images/service-facial.jpg' },
+    { category: 'Hair', image: haircutStyling },
+    { category: 'Makeup', image: bridalMakeup },
+    { category: 'Nails', image: manicurePedicure },
+    { category: 'Bridal', image: bridalMakeup },
+    { category: 'Hair', image: hairSpa },
+    { category: 'Makeup', image: facialSkincare },
   ];
 
   const filteredGallery = galleryFilter === 'All' 
@@ -73,7 +79,7 @@ const App = () => {
         <div 
           className="absolute inset-0 z-0 parallax"
           style={{ 
-            backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero.jpg')" 
+            backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/src/hero.jpg')" 
           }}
         />
         <div className="relative z-10 text-center px-4">
